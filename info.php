@@ -14,12 +14,15 @@ if(count(get_included_files()) ==1){$z="HTTP/1.0 404 Not Found";header($z);die($
 $module_directory = 'einbild';
 $module_name = 'einbild';
 $module_function = 'page';
-$module_version = '0.3';
+$module_version = '0.3.1';
 $module_platform = '1.4.0';
 $module_author = 'florian';
 $module_license = 'WTFPL';
 $module_description = 'Place an image somewhere. ';
 
 /*
-0.3 2020/05/27
-! Fix for Fatal Error when used with other wysiwyg2 based modules on the same page (thx to Bernd)
+ * 0.3.1 2020-06-22
+ * Fixed warning regarding not correct closed comment (Bernd)
+ * 0.3 2020-05-27
+ * Fix for Fatal Error when used with other wysiwyg2 based modules on the same page (thx to Bernd)
+ */
